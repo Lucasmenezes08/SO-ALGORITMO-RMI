@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
      <link href="./output.css" rel="stylesheet">
-     <link href="./index.css" rel="stylesheet">
 </head>
 <body class="h-screen flex flex-col">
     <header class="antialiased font-sans flex flex-col w-full bg-[#1a202c] bg-linear-to-b from-black/30 to-black/50">
             <section class="flex items-center justify-center border-solid border-1 border-b-gray-600 py-3 bg-[#1a202c]/95">
                 <section class="flex flex-row justify-center items-center gap-3">
-                    <img class="w-6 h-6 bg-sky-500" src="./assets/binario.png"></img>
+                    <img class="w-6 h-6 bg-sky-500" src="./assets/binario.png">
                     <p class="text-lg text-white font-semibold font-sans text-shadow-2xs">Grupo 5 - RMI</p>
                 </section>
             </section>
@@ -20,7 +19,7 @@
             <section class="flex flex-col items-center justify-center min-h-screen w-full">
                 <section class="flex flex-col justify-center w-[90%] ">
                     <p class=" text-6xl text-center text-white font-bold font-sans text-shadow-2xs overflow-wrap break-after-all mb-10">Solução de Exclusão Mútua Passagem de Mensagem (RMI)</p>
-                    <p class=" text-xl text-gray-400 font-light px-15 text-center overflow-wrap break-after-all">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus est lorem, laoreet at fringilla quis, viverra in ipsum. Curabitur metus mi, iaculis nec nisi at, blandit consequat lacus. Integer blandit pulvinar turpis eu placerat. Sed et vestibulum nisi. Praesent in ante lorem</p>
+                    <p class=" text-xl text-gray-400 font-light px-15 text-center overflow-wrap break-after-all">Se formos falar da exclusão mútua passagem de mensagem (rmi), primeiro temos que entender o que cada um significa de forma separada e posteriormente o que eles são juntos.</p>
                     
                 </section>
                 <button class="flex items-center justify-center text-xl/relaxed bg-sky-500 w-40 h-15 rounded-2xl mt-10 text-white font-bold font-sans text-shadow-2xs cursor-pointer"><a href="#introducao">Comecar</a></button>
@@ -28,19 +27,19 @@
              
         </header>
 
-        <section class="w-full flex flex-col bg-[#1a202c] font-sans" >
-            <section class="flex flex-col justify-center items-center mt-20">
+        <section class="w-full flex flex-col bg-[#1a202c] font-sans py-15" >
+            <section class="flex flex-col justify-center items-center mt-10">
                 <h3 id="introducao" class="text-3xl mb-4  text-white font-semibold text-shadow-2xs">Exclusão Mútua</h3>
                 <p class="text-md text-gray-400 font-light"> Esse conceito significa que 2 processos não podem acessar uma seção crítica ao mesmo tempo.</p>
             </section>
 
-            <section class="flex flex-row justify-center mt-25 px-5 gap-10">
+            <section class="flex flex-row justify-center mt-20 px-5 gap-10">
 
                 <section class="flex flex-col">
                     <h4 class="text-xl  text-white font-semibold text-shadow-2xs">Exemplo: O barbeiro adormecido</h4>
                     <section class="flex flex-col justify-center items-center mt-4 bg-[#2d3748] rounded-xl">
-                        <img src="./assets/image4.png" class="w-full h-90 px-5 py-5 rounded-4xl">
-                        <p class="text-md text-gray-400 font-light py-5 px-5 text-center">
+                        <img src="./assets/image4.png" class="w-full h-80 px-5 py-5 rounded-4xl">
+                        <p class="text-md text-gray-400 font-light py-3 px-5 text-center">
                             Exemplo de cliente querendo ir para barbeiro e isso mostra a ideia do algoritmo de exclusão múltipla, em que só um processo entrará por vez. Nessa representação, apenas um cliente entrou por vez no barbeiro e o seguinte só pode entrar quando o outro saiu.
                         </p>
 
@@ -52,12 +51,12 @@
                     <section class="flex flex-col justify-center items-center mt-4 bg-[#2d3748] rounded-xl">
                         <section>
                             <h5 class="px-5 py-5 text-lg text-sky-600 font-semibold text-shadow-2xs">O que são?</h5>
-                            <p class="px-5 py-5 text-md text-gray-400 font-light text-start">Essa ideia de exclusão mútua, nos ajuda a prevenir de problemas como Condições de Corrida, que é quando dois processos modificam uma mesma variável ao mesmo tempo. Podendo causar vários problemas como uma inconsistência nos valores.</p>
+                            <p class="px-5 text-md text-gray-400 font-light text-start">Essa ideia de exclusão mútua, nos ajuda a prevenir de problemas como Condições de Corrida, que é quando dois processos modificam uma mesma variável ao mesmo tempo. Podendo causar vários problemas como uma inconsistência nos valores.</p>
                         </section>
                        <img src="./assets/image3.png" class="w-full h-90 px-5 py-5 rounded-4xl">
 
                         <section>
-                            <h5 class="px-5 py-5 text-lg text-sky-600 font-semibold text-shadow-2xs">Exemplo: Saque bancário</h5>
+                            <h5 class="px-5 text-lg text-sky-600 font-semibold text-shadow-2xs">Exemplo: Saque bancário</h5>
                             <p class="px-5 py-5 text-md text-gray-400 font-light text-start">Um exemplo que isso ocorre seria um saque simultâneo no banco, em que dois processos podem tentar sacar a mesma quantidade de dinheiro ao mesmo tempo, o que pode fazer o sistema operacional considerar que houve apenas um saque ao invés de dois.</p>
                         </section>
                     </section>
@@ -66,6 +65,60 @@
 
             </section>
 
+
+        </section>
+
+
+        <section class="w-full flex flex-col bg-[#2d3748] font-sans py-15 ">
+
+            <section class="flex flex-col justify-center items-center mt-10">
+                <h3 class="py-3 text-3xl  text-white font-semibold text-shadow-2xs">Passagem de Mensagem</h3>
+                <p class=" w-[50%] text-center text-md text-gray-400 font-light overflow-wrap break-after-all">A passagem de mensagem. É um método de comunicação entre processos (IPC) usado quando não tem memória compartilhada, usados em sistemas operacionais ou máquinas diferentes.</p>
+            </section>
+
+            <section class="flex flex-row justify-center mt-20 px-5 gap-10">
+                <section class="flex flex-col bg-[#1a202c] rounded-2xl pb-10">
+                    <h4 class="px-5 pt-4 text-xl text-white font-semibold text-shadow-2xs">Comunicação e Coordenação</h4>
+                    <img src="./assets/image2.png" class="w-full h-90 px-5 py-5 rounded-4xl">
+                    <p class="px-5 py-5 text-md text-gray-400 font-light text-start">A ideia de seu funcionamento, é que os processos possam se comunicar entre si, assim evitando que os dois acabem entrando na parte crítica ao mesmo tempo.Ele também pode ter um coordenador, que é quem escolhe se o processo vai entrar na parte crítica ou não.Ele funciona com um processo enviando uma mensagem, e o outro processo recebendo ela.</p>
+                    <p class="px-5 py-5 text-md text-gray-400 font-light text-start">Existem 3 tipos comuns de mensagens para serem utilizadas.</p>
+
+                    <section class="flex flex-col">
+                        <section class="flex flex-row items-center gap-2 px-5 py-2 text-md text-gray-400 font-light text-start">
+                            <img src="./assets/correto.png" class="w-5 h-5">
+                            <p><span class="text-white font-semibold">REQUEST:</span> É o processo pedindo pra entrar na zona critica</p>
+                        </section>
+
+                        <section class="flex flex-row items-center gap-2 px-5 py-2 text-md text-gray-400 font-light text-start">
+                            <img src="./assets/correto.png" class="w-5 h-5">
+                            <p><span class="text-white font-semibold">REPLY:</span> Outros processos autorizando o original a entrar na zona critica.</p>
+                        </section>
+
+                        <section class="flex flex-row items-center gap-2 px-5 py-2 text-md text-gray-400 font-light text-start">
+                            <img src="./assets/correto.png" class="w-5 h-5">
+                            <p class=""><span class="text-white font-semibold">RELEASE:</span> Enviado pelo processo ao sair da zona critica. Existem algoritmos que o RELEASE não é utilizado, como o caso do Ricart–Agrawala que iremos mostrar mais na frente.</p>
+                        </section>
+
+                    </section>
+                </section>
+
+
+
+
+                
+                <section class="flex flex-col bg-[#1a202c] rounded-2xl">
+                    <h4 class="px-5 text-start pt-4 text-xl text-white font-semibold text-shadow-2xs">ALGORITMO RICART-AGRAWALA</h4>
+                    <p class="px-5 py-6 text-md text-gray-400 font-light text-start">O Algoritmo de Ricart-Agrawala foi proposto por Glenn Ricart e Ashok Agrawala como uma extensão e otimização do Algoritmo de Exclusão Mútua Distribuída de Lamport.</p>
+                    <p class="px-5 py-6 text-md text-gray-400 font-light text-start">O algoritmo é um método distributivo que foi desenvolvido com o objetivo de garantir a exclusão mútua, por meio de uma abordagem baseada em permissão.</p>
+                    <p class="px-5 py-6 text-md text-gray-400 font-light text-start"> Ou seja, ele funciona assegurando que apenas um processo acesse um recurso compartilhado (seção crítica) por vez em um sistema distribuído, sem que haja a necessidade de um coordenador central.</p>
+                </section>
+                
+
+            </section>
+
+
+
+             
 
         </section>
     

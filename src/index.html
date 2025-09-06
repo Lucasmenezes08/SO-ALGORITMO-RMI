@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
      <link href="./output.css" rel="stylesheet">
+     <link href="./index.css" rel="stylesheet">
 </head>
-<body style="overflow-y : scroll ; scroll-behavior: smooth;">
+<body class="h-screen flex flex-col">
     <header class="antialiased font-sans flex flex-col w-full bg-[#1a202c] bg-linear-to-b from-black/30 to-black/50">
             <section class="flex items-center justify-center border-solid border-1 border-b-gray-600 py-3 bg-[#1a202c]/95">
                 <section class="flex flex-row justify-center items-center gap-3">
@@ -22,10 +23,51 @@
                     <p class=" text-xl text-gray-400 font-light px-15 text-center overflow-wrap break-after-all">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus est lorem, laoreet at fringilla quis, viverra in ipsum. Curabitur metus mi, iaculis nec nisi at, blandit consequat lacus. Integer blandit pulvinar turpis eu placerat. Sed et vestibulum nisi. Praesent in ante lorem</p>
                     
                 </section>
-                <button class="flex items-center justify-center text-xl/relaxed bg-sky-500 w-40 h-15 rounded-2xl mt-10 text-white font-bold font-sans text-shadow-2xs cursor-pointer"><a>Comecar</a></button>
+                <button class="flex items-center justify-center text-xl/relaxed bg-sky-500 w-40 h-15 rounded-2xl mt-10 text-white font-bold font-sans text-shadow-2xs cursor-pointer"><a href="#introducao">Comecar</a></button>
             </section>
              
         </header>
+
+        <section class="w-full flex flex-col bg-[#1a202c] font-sans" >
+            <section class="flex flex-col justify-center items-center mt-20">
+                <h3 id="introducao" class="text-3xl mb-4  text-white font-semibold text-shadow-2xs">Exclusão Mútua</h3>
+                <p class="text-md text-gray-400 font-light"> Esse conceito significa que 2 processos não podem acessar uma seção crítica ao mesmo tempo.</p>
+            </section>
+
+            <section class="flex flex-row justify-center mt-25 px-5 gap-10">
+
+                <section class="flex flex-col">
+                    <h4 class="text-xl  text-white font-semibold text-shadow-2xs">Exemplo: O barbeiro adormecido</h4>
+                    <section class="flex flex-col justify-center items-center mt-4 bg-[#2d3748] rounded-xl">
+                        <img src="./assets/image4.png" class="w-full h-90 px-5 py-5 rounded-4xl">
+                        <p class="text-md text-gray-400 font-light py-5 px-5 text-center">
+                            Exemplo de cliente querendo ir para barbeiro e isso mostra a ideia do algoritmo de exclusão múltipla, em que só um processo entrará por vez. Nessa representação, apenas um cliente entrou por vez no barbeiro e o seguinte só pode entrar quando o outro saiu.
+                        </p>
+
+                    </section>
+                </section>
+
+                <section class="flex flex-col">
+                    <h4 class="text-xl  text-white font-semibold text-shadow-2xs">Condição de corrida</h4>
+                    <section class="flex flex-col justify-center items-center mt-4 bg-[#2d3748] rounded-xl">
+                        <section>
+                            <h5 class="px-5 py-5 text-lg text-sky-600 font-semibold text-shadow-2xs">O que são?</h5>
+                            <p class="px-5 py-5 text-md text-gray-400 font-light text-start">Essa ideia de exclusão mútua, nos ajuda a prevenir de problemas como Condições de Corrida, que é quando dois processos modificam uma mesma variável ao mesmo tempo. Podendo causar vários problemas como uma inconsistência nos valores.</p>
+                        </section>
+                       <img src="./assets/image3.png" class="w-full h-90 px-5 py-5 rounded-4xl">
+
+                        <section>
+                            <h5 class="px-5 py-5 text-lg text-sky-600 font-semibold text-shadow-2xs">Exemplo: Saque bancário</h5>
+                            <p class="px-5 py-5 text-md text-gray-400 font-light text-start">Um exemplo que isso ocorre seria um saque simultâneo no banco, em que dois processos podem tentar sacar a mesma quantidade de dinheiro ao mesmo tempo, o que pode fazer o sistema operacional considerar que houve apenas um saque ao invés de dois.</p>
+                        </section>
+                    </section>
+                </section>
+
+
+            </section>
+
+
+        </section>
     
 </body>
 </html>

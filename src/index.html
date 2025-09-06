@@ -108,9 +108,30 @@
                 
                 <section class="flex flex-col bg-[#1a202c] rounded-xl border-1 border-solid border-gray-600">
                     <h4 class="px-5 text-start pt-4 text-xl text-white font-semibold text-shadow-2xs">ALGORITMO RICART-AGRAWALA</h4>
-                    <p class="px-5 py-6 text-md text-gray-400 font-light text-start">O Algoritmo de Ricart-Agrawala foi proposto por Glenn Ricart e Ashok Agrawala como uma extensão e otimização do Algoritmo de Exclusão Mútua Distribuída de Lamport.</p>
-                    <p class="px-5 py-6 text-md text-gray-400 font-light text-start">O algoritmo é um método distributivo que foi desenvolvido com o objetivo de garantir a exclusão mútua, por meio de uma abordagem baseada em permissão.</p>
-                    <p class="px-5 py-6 text-md text-gray-400 font-light text-start"> Ou seja, ele funciona assegurando que apenas um processo acesse um recurso compartilhado (seção crítica) por vez em um sistema distribuído, sem que haja a necessidade de um coordenador central.</p>
+                    <h5 class="px-5 py-4 text-lg text-sky-600 font-semibold text-shadow-2xs">O que é</h5>
+                    <p class="px-5 py-2 text-md text-gray-400 font-light text-start">O Algoritmo de Ricart-Agrawala foi proposto por Glenn Ricart e Ashok Agrawala como uma extensão e otimização do Algoritmo de Exclusão Mútua Distribuída de Lamport.</p>
+                    <p class="px-5 py-2 text-md text-gray-400 font-light text-start">O algoritmo é um método distributivo que foi desenvolvido com o objetivo de garantir a exclusão mútua, por meio de uma abordagem baseada em permissão.</p>
+                    <p class="px-5 py-2 text-md text-gray-400 font-light text-start"> Ou seja, ele funciona assegurando que apenas um processo acesse um recurso compartilhado (seção crítica) por vez em um sistema distribuído, sem que haja a necessidade de um coordenador central.</p>
+
+                    <section class="flex flex-col py-4">
+                        <h4 class="px-5 text-lg text-sky-600 font-semibold text-shadow-2xs">Funcionamento</h4>
+                         <section class="flex flex-row items-center gap-2 px-5 py-2 text-md text-gray-400 font-light text-start">
+                            <img src="./assets/correto.png" class="w-5 h-5">
+                            <p> <span class="text-white font-semibold">Se Pj​ não está na seção crítica e não deseja entrar</span>, ele responde com REPLY imediatamente.</p>
+                        </section>
+
+                        <section class="flex flex-row items-center gap-2 px-5 py-2 text-md text-gray-400 font-light text-start">
+                            <img src="./assets/correto.png" class="w-5 h-5">
+                            <p> <span class="text-white font-semibold"> Pj​ já está na seção crítica</span>, ele adia o REPLY até sair.</p>
+                        </section>
+
+                        <section class="flex flex-row items-center gap-2 px-5 py-2 text-md text-gray-400 font-light text-start">
+                            <img src="./assets/correto.png" class="w-5 h-5">
+                            <p class=""><span class="text-white font-semibold">Se Pj​ também deseja entrar</span>, ele compara seu timestamp com o de Pi​. Se o timestamp de Pi​ for mais antigo (menor prioridade), Pj​ envia o REPLY. Caso contrário, ele adia a resposta e só a enviará depois que ele mesmo tiver acessado e saído da seção crítica.</p>
+                        </section>
+                    </section>
+
+                    <p class="px-5 py-2 text-md text-gray-400 font-light text-center">Finalmente, quando Pi​ <span class="text-gray-500 font-semibold" > sai da seção crítica</span>, ele envia uma mensagem REPLY para todos os processos cujas requisições ele havia deixado em espera</p>
                 </section>
                 
 
@@ -120,7 +141,7 @@
 
 
         <section class="bg-gray-900">
-
+            
         </section>
     
 </body>

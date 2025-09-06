@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
      <link href="./output.css" rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.min.js"></script>
 </head>
-<body class="h-screen flex flex-col">
+<body class="h-screen flex flex-col overflow-x-hidden">
     <header class="antialiased font-sans flex flex-col w-full bg-[#1a202c] bg-linear-to-b from-black/30 to-black/50">
             <section class="flex items-center justify-center border-solid border-1 border-b-gray-600 py-3 bg-[#1a202c]/95">
                 <section class="flex flex-row justify-center items-center gap-3">
@@ -196,6 +197,12 @@
 
             </section>
         </section>
+
+        <section class="w-full justify-center items-center flex bg-[#1a202c] font-sans py-30 px-20">
+            <div id="animation-container" class=" rounded-xl overflow-hidden border-2 border-solid border-gray-600 shadow-lg"></div>
+        </section>
     
+
+    <script src="./index.js"></script>
 </body>
 </html>

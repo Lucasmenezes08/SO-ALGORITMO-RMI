@@ -1,3 +1,5 @@
+let baseSize = 1
+
 class Process2D {
   constructor(id, allProcesses, x, y) {
     this.id = id;
@@ -127,12 +129,13 @@ class Process2D {
       fill(255, 0, 255)
     else
       fill(255)
-    rect(this.x, this.y, 100, 100)
+    rect(this.x, this.y, 100 * baseSize, 100 * baseSize)
     fill(0)
+    textSize(30 * baseSize)
     text(`P${this.id}`, this.x, this.y)
-    textSize(20)
-    text(`Clock ${this.clock}`, this.x, this.y + 30)
-    textSize(30)
+    textSize(20 * baseSize)
+    text(`Clock ${this.clock}`, this.x, this.y + 30 * baseSize)
+    textSize(30 * baseSize)
   }
 }
 
@@ -151,17 +154,22 @@ const deltaA = Math.PI * 2 / totalProcess
 let radius = 400
 
 function setup() {
-  const canvas = createCanvas(window.innerWidth, window.innerHeight);
+  const container = document.getElementById("animation-container");
+  const canvas = createCanvas(container.offsetWidth, container.offsetHeight);
   canvas.parent('animation-container');
+  const m = min(width, height)
+  const dif =  (m / max(width, height)) ** 2
+  console.log(dif)
+  baseSize = (m / 1080) - dif * 0.15
   textAlign(CENTER, CENTER)
-  textSize(30)
+  textSize(30 * baseSize)
   rectMode(CENTER, CENTER)
-  strokeWeight(8)
+  strokeWeight(8 * baseSize)
 
-  radius = min(width, height) / 2.3
+  radius *= baseSize
 
   center = {
-    x: width * 0.6,
+    x: width / 2,
     y: height / 2
   }
 
@@ -230,7 +238,7 @@ function draw() {
         }
 
         stroke(100)
-        rect(x, y, 20, 20)
+        rect(x, y, 20 * baseSize, 20 * baseSize)
         noStroke()
       }
     }
@@ -238,7 +246,7 @@ function draw() {
   }
 
   fill(255, 255, 0)
-  circle(center.x, center.y, 200)
+  circle(center.x, center.y, 200 * baseSize)
   fill(0)
   text("Seção\nCrítica", center.x, center.y)
 
@@ -246,7 +254,7 @@ function draw() {
 
   fill(255);
   textAlign(LEFT, TOP);
-  textSize(25);
+  textSize(25 * baseSize);
 
   const stats = [
     `⏱ Tempo: ${String(Math.floor(sec / 60)).padStart(2, "0")}:${String(sec % 60).padStart(2, "0")}`,
@@ -259,7 +267,7 @@ function draw() {
   ];
 
   stats.forEach((line, i) => {
-    text(line, 20, 20 + i * 40);
+    text(line, 20, 20 + i * 40 * baseSize);
   });
 
   textAlign(CENTER, CENTER);

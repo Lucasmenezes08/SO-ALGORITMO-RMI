@@ -160,7 +160,6 @@ function setup() {
   canvas.parent('animation-container');
   const m = min(width, height)
   const dif =  (m / max(width, height)) ** 2
-  console.log(dif)
   baseSize = (m / 1080) - dif * 0.15
   textAlign(CENTER, CENTER)
   textSize(30 * baseSize)

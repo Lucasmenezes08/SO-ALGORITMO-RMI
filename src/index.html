@@ -39,7 +39,7 @@
     <section class="w-full flex flex-col bg-[#1a202c] font-sans py-15">
         <section class="flex flex-col justify-center items-center mt-10">
             <h3 id="introducao" class="text-3xl mb-4  text-white font-semibold text-shadow-2xs">Exclusão Mútua</h3>
-            <p class="text-md text-gray-400 font-light"> Esse conceito significa que 2 processos não podem acessar uma
+            <p class="text-md text-gray-400 font-medium"> Esse conceito significa que 2 processos não podem acessar uma
                 seção crítica ao mesmo tempo.</p>
         </section>
 
@@ -50,7 +50,7 @@
                 <section
                     class="flex flex-col justify-center items-center mt-4 bg-[#2d3748] rounded-xl border-1 border-solid border-gray-600">
                     <img src="./assets/image4.png" class="w-full h-80 px-5 py-5 rounded-4xl">
-                    <p class="text-md text-gray-400 font-light py-3 px-5 text-center">
+                    <p class="text-md text-gray-400 font-medium py-3 px-5 text-center">
                         Exemplo de cliente querendo ir para barbeiro e isso mostra a ideia do algoritmo de exclusão
                         múltipla, em que só um processo entrará por vez. Nessa representação, apenas um cliente entrou
                         por vez no barbeiro e o seguinte só pode entrar quando o outro saiu.
@@ -65,7 +65,7 @@
                     class="flex flex-col justify-center items-center mt-4 bg-[#2d3748] rounded-xl border-1 border-solid border-gray-600">
                     <section>
                         <h5 class="px-5 py-5 text-lg text-sky-600 font-semibold text-shadow-2xs">O que são?</h5>
-                        <p class="px-5 text-md text-gray-400 font-light text-start">Essa ideia de exclusão mútua, nos
+                        <p class="px-5 text-md text-gray-400 font-medium text-start">Essa ideia de exclusão mútua, nos
                             ajuda a prevenir de problemas como Condições de Corrida, que é quando dois processos
                             modificam uma mesma variável ao mesmo tempo. Podendo causar vários problemas como uma
                             inconsistência nos valores.</p>
@@ -74,7 +74,7 @@
 
                     <section>
                         <h5 class="px-5 text-lg text-sky-600 font-semibold text-shadow-2xs">Exemplo: Saque bancário</h5>
-                        <p class="px-5 py-5 text-md text-gray-400 font-light text-start">
+                        <p class="px-5 py-5 text-md text-gray-400 font-medium text-start">
                             Um exemplo disso ocorre em um saque simultâneo no banco: dois processos podem tentar retirar
                             a mesma quantia ao mesmo tempo, o que pode levar o sistema a registrar apenas um saque em
                             vez de dois.
@@ -94,7 +94,7 @@
 
         <section class="flex flex-col justify-center items-center">
             <h3 class="py-3 text-3xl  text-white font-semibold text-shadow-2xs">Passagem de Mensagem</h3>
-            <p class=" w-[50%] text-center text-md text-gray-400 font-light overflow-wrap break-after-all">A passagem de
+            <p class=" w-[50%] text-center text-md text-gray-400 font-medium overflow-wrap break-after-all">A passagem de
                 mensagem é um método de comunicação entre processos (IPC) usado quando não tem memória compartilhada em
                 sistemas operacionais ou máquinas diferentes.</p>
         </section>
@@ -105,31 +105,31 @@
                 <h4 class="px-5 pt-4 pb-3 text-xl text-white font-semibold text-shadow-2xs">Comunicação e Coordenação
                 </h4>
                 <img src="./assets/image2.png" class="w-full h-80 px-10 py-5 rounded-4xl">
-                <p class="px-5 py-5 text-md text-gray-400 font-light text-start">A ideia de seu funcionamento, é que os
+                <p class="px-5 py-5 text-md text-gray-400 font-medium text-start">A ideia de seu funcionamento, é que os
                     processos possam se comunicar entre si, assim evitando que os dois acabem entrando na parte crítica
                     ao mesmo tempo.Ele também pode ter um coordenador, que é quem escolhe se o processo vai entrar na
                     parte crítica ou não.Ele funciona com um processo enviando uma mensagem, e o outro processo
                     recebendo ela.</p>
-                <p class="px-5 py-5 text-md text-gray-400 font-light text-start">Existem 3 tipos comuns de mensagens
+                <p class="px-5 py-5 text-md text-gray-400 font-medium text-start">Existem 3 tipos comuns de mensagens
                     para serem utilizadas.</p>
 
                 <section class="flex flex-col">
                     <section
-                        class="flex flex-row items-center gap-2 px-5 py-2 text-md text-gray-400 font-light text-start">
+                        class="flex flex-row items-center gap-2 px-5 py-2 text-md text-gray-400 font-medium text-start">
                         <img src="./assets/correto.png" class="w-5 h-5">
                         <p><span class="text-white font-semibold">REQUEST:</span> É o processo pedindo pra entrar na
                             zona critica</p>
                     </section>
 
                     <section
-                        class="flex flex-row items-center gap-2 px-5 py-2 text-md text-gray-400 font-light text-start">
+                        class="flex flex-row items-center gap-2 px-5 py-2 text-md text-gray-400 font-medium text-start">
                         <img src="./assets/correto.png" class="w-5 h-5">
                         <p><span class="text-white font-semibold">REPLY:</span> Outros processos autorizando o original
                             a entrar na zona critica.</p>
                     </section>
 
                     <section
-                        class="flex flex-row items-center gap-2 px-5 py-2 text-md text-gray-400 font-light text-start">
+                        class="flex flex-row items-center gap-2 px-5 py-2 text-md text-gray-400 font-medium text-start">
                         <img src="./assets/correto.png" class="w-5 h-5">
                         <p class=""><span class="text-white font-semibold">RELEASE:</span> Enviado pelo processo ao sair
                             da zona critica. Existem algoritmos que o RELEASE não é utilizado, como o caso do
@@ -147,34 +147,34 @@
                 <h4 class="px-5 text-start pt-4 text-xl text-white font-semibold text-shadow-2xs">ALGORITMO
                     RICART-AGRAWALA</h4>
                 <h5 class="px-5 py-4 text-lg text-sky-600 font-semibold text-shadow-2xs">O que é</h5>
-                <p class="px-5 py-2 text-md text-gray-400 font-light text-start">O Algoritmo de Ricart-Agrawala foi
+                <p class="px-5 py-2 text-md text-gray-400 font-medium text-start">O Algoritmo de Ricart-Agrawala foi
                     proposto por Glenn Ricart e Ashok Agrawala como uma extensão e otimização do Algoritmo de Exclusão
                     Mútua Distribuída de Lamport.</p>
-                <p class="px-5 py-2 text-md text-gray-400 font-light text-start">O algoritmo é um método distributivo
+                <p class="px-5 py-2 text-md text-gray-400 font-medium text-start">O algoritmo é um método distributivo
                     que foi desenvolvido com o objetivo de garantir a exclusão mútua, por meio de uma abordagem baseada
                     em permissão.</p>
-                <p class="px-5 py-2 text-md text-gray-400 font-light text-start"> Ou seja, ele funciona assegurando que
+                <p class="px-5 py-2 text-md text-gray-400 font-medium text-start"> Ou seja, ele funciona assegurando que
                     apenas um processo acesse um recurso compartilhado (seção crítica) por vez em um sistema
                     distribuído, sem que haja a necessidade de um coordenador central.</p>
 
                 <section class="flex flex-col py-4">
                     <h4 class="px-5 text-lg text-sky-600 font-semibold text-shadow-2xs">Funcionamento</h4>
                     <section
-                        class="flex flex-row items-center gap-2 px-5 py-2 text-md text-gray-400 font-light text-start">
+                        class="flex flex-row items-center gap-2 px-5 py-2 text-md text-gray-400 font-medium text-start">
                         <img src="./assets/correto.png" class="w-5 h-5">
                         <p> <span class="text-white font-semibold">Se Pj não está na seção crítica e não deseja
                                 entrar</span>, ele responde com REPLY imediatamente.</p>
                     </section>
 
                     <section
-                        class="flex flex-row items-center gap-2 px-5 py-2 text-md text-gray-400 font-light text-start">
+                        class="flex flex-row items-center gap-2 px-5 py-2 text-md text-gray-400 font-medium text-start">
                         <img src="./assets/correto.png" class="w-5 h-5">
                         <p> <span class="text-white font-semibold"> Pj já está na seção crítica</span>, ele adia o REPLY
                             até sair.</p>
                     </section>
 
                     <section
-                        class="flex flex-row items-center gap-2 px-5 py-2 text-md text-gray-400 font-light text-start">
+                        class="flex flex-row items-center gap-2 px-5 py-2 text-md text-gray-400 font-medium text-start">
                         <img src="./assets/correto.png" class="w-5 h-5">
                         <p class=""><span class="text-white font-semibold">Se Pj também deseja entrar</span>, ele
                             compara seu timestamp com o de Pi​. Se o timestamp de Pi​ for mais antigo (menor
@@ -183,7 +183,7 @@
                     </section>
                 </section>
 
-                <p class="px-5 py-2 text-md text-gray-400 font-light text-center">Finalmente, quando Pi <span
+                <p class="px-5 py-2 text-md text-gray-400 font-medium text-center">Finalmente, quando Pi <span
                         class="text-gray-500 font-semibold"> sai da seção crítica</span>, ele envia uma mensagem REPLY
                     para todos os processos cujas requisições ele havia deixado em espera</p>
             </section>
@@ -197,21 +197,21 @@
     <section class="w-full flex flex-col bg-gray-900 font-sans py-15 ">
         <section class="flex flex-col justify-center items-center">
             <h3 class="py-3 text-3xl  text-white font-semibold text-shadow-2xs">Vantagens e Desvantagens</h3>
-            <p class=" w-[50%] text-center text-md text-gray-400 font-light">Analisando os prós e contras para entender
+            <p class=" w-[50%] text-center text-md text-gray-400 font-medium">Analisando os prós e contras para entender
                 quando e como aplicar o algoritmo</p>
         </section>
 
         <section class="flex flex-row justify-center mt-20 px-5 gap-10">
             <section
                 class="flex flex-col justify-center  bg-[#2d3748] rounded-xl pb-10 border-1 border-solid border-gray-600">
-                <section class="flex flex-row items-center gap-4 px-5 py-2 text-md font-light text-start">
+                <section class="flex flex-row items-center gap-4 px-5 py-2 text-md font-medium text-start">
                     <img src="./assets/marca-de-verificacao.png" class="w-6 h-6  bg-green-400 rounded-full border-none">
                     <h4 class="text-2xl text-green-400 font-semibold text-shadow-lg">Vantagens</h4>
                 </section>
 
                 <section class="flex flex-col justify-start items-start py-4">
                     <section
-                        class="flex flex-row justify-center items-center gap-4 px-5 py-2 text-md text-gray-400 font-light text-start">
+                        class="flex flex-row justify-center items-center gap-4 px-5 py-2 text-md text-gray-400 font-medium text-start">
                         <img src="./assets/aceitar.png" class="w-4 h-4">
                         <p><span class="text-white font-semibold text-shadow-md pr-1">Baixa complexidade de
                                 mensagens:</span> O algoritmo requer apenas (N-1) mensagens para entrar na seção
@@ -219,14 +219,14 @@
                     </section>
 
                     <section
-                        class="flex flex-row justify-center items-center gap-4 px-5 py-2 text-md text-gray-400 font-light text-start">
+                        class="flex flex-row justify-center items-center gap-4 px-5 py-2 text-md text-gray-400 font-medium text-start">
                         <img src="./assets/aceitar.png" class="w-4 h-4">
                         <p><span class="text-white font-semibold text-shadow-md pr-1">Escalabilidade:</span> Ele pode
                             ser usado em sistemas com uma quantidade muito grande de nós;</p>
                     </section>
 
                     <section
-                        class="flex flex-row justify-center items-center gap-4 px-5 py-2 text-md text-gray-400 font-light text-start">
+                        class="flex flex-row justify-center items-center gap-4 px-5 py-2 text-md text-gray-400 font-medium text-start">
                         <img src="./assets/aceitar.png" class="w-4 h-4">
                         <p><span class="text-white font-semibold text-shadow-md pr-1">Não bloqueante:</span> O algoritmo
                             permite que um nó possa continuar suas operações enquanto espera para entrar na seção
@@ -238,21 +238,21 @@
 
             <section
                 class="flex flex-col justify-start py-1 items-start bg-[#2d3748] rounded-xl pb-10 border-1 border-solid border-gray-600">
-                <section class="flex flex-row items-center gap-4 px-5 py-2 text-md font-light text-start">
+                <section class="flex flex-row items-center gap-4 px-5 py-2 text-md font-medium text-start">
                     <img src="./assets/fechar.png" class="w-6 h-6  bg-red-400 rounded-full border-none">
                     <h4 class="text-2xl text-red-400 font-semibold text-shadow-lg">Desvantagens</h4>
                 </section>
 
                 <section class="flex flex-col justify-start items-start py-4">
                     <section
-                        class="flex flex-row justify-center items-center gap-4 px-5 py-2 text-md text-gray-400 font-light text-start">
+                        class="flex flex-row justify-center items-center gap-4 px-5 py-2 text-md text-gray-400 font-medium text-start">
                         <img src="./assets/cruz.png" class="w-4 h-4">
                         <p><span class="text-white font-semibold text-shadow-md pr-1">Abordagem não confiável: </span> A
                             falha de qualquer um dos nós pode comprometer o progresso do sistema;</p>
                     </section>
 
                     <section
-                        class="flex flex-row justify-center items-center gap-4 px-5 py-2 text-md text-gray-400 font-light text-start">
+                        class="flex flex-row justify-center items-center gap-4 px-5 py-2 text-md text-gray-400 font-medium text-start">
                         <img src="./assets/cruz.png" class="w-4 h-4 ">
                         <p><span class="text-white font-semibold text-shadow-md pr-1">Requer conhecimento global de
                                 grupo: </span> Cada processo precisa conhecer a identidade de todos os outros processos

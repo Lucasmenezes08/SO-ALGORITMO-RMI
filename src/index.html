@@ -306,11 +306,19 @@
 
 
 
-    <section>
-        <section>
-            <h3>Exemplo de RMI</h3>
-            <p></p>
+    <section class="w-full flex flex-col bg-gray-900 font-sans py-20 px-10">
+        <section class="flex flex-col justify-center items-center py-5 pb-10">
+            <h3 class="py-3 text-3xl  text-white font-semibold text-shadow-2xs">Exemplo de RMI</h3>
+            <p class=" w-[50%] text-center text-md text-gray-400 font-medium">Ilustrando como o RMI simplifica a comunicação para o acesso a sessão crítica.</p>
         </section>
+
+        <section class="flex flex-col gap-5 justify-center items-center mt-4 bg-[#2d3748] rounded-xl border-1 border-solid border-gray-600 py-10">
+            <h5 class="px-5 text-lg text-sky-600 font-semibold text-shadow-2xs">Imagine dois computadores A e B.</h5>
+            <p class="px-5 py-2 text-md text-gray-400 font-light text-center">Quando A quer entrar na sessão crítica, ao invés dele mandar manualmente a requisição para B, ele apenas chama um método de B “b.pedirPermissão”. A saída do método vai dizer se A pode entrar na sessão, devolvendo o reply, ou se não, não retornando nada.</p>
+            <p class="px-5 py-2 text-md text-gray-400 font-light text-center">Desse modo, <strong>o RMI é como se fosse um “atalho”</strong>, para <strong>evitar detalhes de rede como abrir socket, formatar mensagem, enviar, esperar resposta, fazer uso de json, XML, binário, tratar erros de rede. ele faz sem depender da interpretação do computador que está sendo requisitado.</strong> Você apenas chama os métodos e o java faz o resto.</p>
+            <p class="px-5 py-2 text-md text-gray-400 font-light text-center">A grande diferença desse para outros métodos, é que esse abstrai toda a rede, fazendo com que o programador em si foque apenas na lógica da aplicação, e não ter quer focar também nas requisições citadas anteriormente.</p>
+        </section>
+
     </section>
 
     <section class="w-full flex justify-center items-center bg-[#1a202c] font-sans py-30 px-20">

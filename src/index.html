@@ -29,9 +29,7 @@
                     Solução de Exclusão Mútua Passagem de Mensagem (RMI)</p>
                 <p data-aos="fade-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1500" data-aos-easing="ease-in-out"
                 
-                class=" text-xl text-gray-400 font-light px-15 text-center overflow-wrap break-after-all">Se formos
-                    falar da exclusão mútua passagem de mensagem (rmi), primeiro temos que entender o que cada um
-                    significa de forma separada e posteriormente o que eles são juntos.</p>
+                <!-- class=" text-l text-gray-400 font-light px-15 text-center overflow-wrap break-after-all">Atividade de Sistemas Operacionais<br>Amanda Luz, Eric Gonçalves<br>Gabriel Aniceto, Lucas Menezes<br>Vagner Melo</p> -->
 
             </section>
         </section>
@@ -45,21 +43,21 @@
             class="text-3xl mb-4  text-white font-semibold text-shadow-2xs">Exclusão Mútua</h3>
 
             <p data-aos="fade-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
-            class="text-md text-gray-400 font-medium"> Esse conceito significa que 2 processos não podem acessar uma
-                seção crítica ao mesmo tempo.</p>
+            class="text-md text-gray-400 font-medium"> Dois processos não podem acessar uma seção crítica ao mesmo tempo</p>
         </section>
 
         <section class="flex flex-row justify-center mt-20 px-5 gap-10">
 
             <section  class="flex flex-col" data-aos="fade-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                <h4 class="text-xl  text-white font-semibold text-shadow-2xs">Exemplo: O barbeiro adormecido</h4>
+                <h3 class="text-xl  text-white font-semibold text-shadow-2xs">Exemplo: Barbeiro Adormecido</h3>
                 <section
                     class="flex flex-col justify-center items-center mt-4 bg-[#2d3748] rounded-xl border-1 border-solid border-gray-600">
                     <img src="./assets/image4.png" class="w-full h-80 px-5 py-5 rounded-4xl">
                     <p class="text-md text-gray-400 font-medium py-3 px-5 text-center">
-                        Exemplo de cliente querendo ir para barbeiro e isso mostra a ideia do algoritmo de exclusão
-                        múltipla, em que só um processo entrará por vez. Nessa representação, apenas um cliente entrou
-                        por vez no barbeiro e o seguinte só pode entrar quando o outro saiu.
+                        No mundo real podemos perceber o conceito da exclusão múltipla numa ida ao barbeiro. 
+                        Nesse caso, um cliente chega ao estabelecimento para ser atendido e logo após chegam outros querendo ser atendidos.
+                        <br><br>Mas, o atendimento deve ser a lógica da ordem da chegada e acontecer de um cliente por vez.
+                        Ou seja, para um cliente ser atendido é necessário que a <b>região crítica</b> (barbeiro) esteja livre.
                     </p>
 
                 </section>
@@ -70,20 +68,21 @@
                 <section
                     class="flex flex-col justify-center items-center mt-4 bg-[#2d3748] rounded-xl border-1 border-solid border-gray-600">
                     <section>
-                        <h5 class="px-5 py-5 text-lg text-sky-600 font-semibold text-shadow-2xs">O que são?</h5>
-                        <p class="px-5 text-md text-gray-400 font-medium text-start">Essa ideia de exclusão mútua, nos
-                            ajuda a prevenir de problemas como Condições de Corrida, que é quando dois processos
-                            modificam uma mesma variável ao mesmo tempo. Podendo causar vários problemas como uma
-                            inconsistência nos valores.</p>
+                        <h5 class="px-5 py-5 text-lg text-sky-600 font-semibold text-shadow-2xs">O que é?</h5>
+                        <p class="px-5 text-md text-gray-400 font-medium text-start">
+                            Quando dois processos modificam uma mesma variável ao mesmo tempo.
+                            Isso pode ocasionar vários problemas como a incosistência de valores.<br>
+
+                            <br>Sendo assim, a <b>exclusão mútua</b> funciona como um aliado para previnir problemas como estes.
+                            </p>
                     </section>
                     <img src="./assets/image3.png" class="w-full h-85 px-5 py-5 rounded-4xl">
 
                     <section>
                         <h5 class="px-5 text-lg text-sky-600 font-semibold text-shadow-2xs">Exemplo: Saque bancário</h5>
                         <p class="px-5 py-5 text-md text-gray-400 font-medium text-start">
-                            Um exemplo disso ocorre em um saque simultâneo no banco: dois processos podem tentar retirar
-                            a mesma quantia ao mesmo tempo, o que pode levar o sistema a registrar apenas um saque em
-                            vez de dois.
+                            Saque Simultâneo: dois processos podem tentar retirar um saldo ao mesmo tempo
+                            o que pode levar o sistema a registrar apenas um saque, acarretando em um problema. 
                         </p>
                     </section>
                 </section>
@@ -100,9 +99,8 @@
 
         <section class="flex flex-col justify-center items-center" data-aos="fade-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1200" data-aos-easing="ease-in-out">
             <h3 class="py-3 text-3xl  text-white font-semibold text-shadow-2xs">Passagem de Mensagem</h3>
-            <p class=" w-[50%] text-center text-md text-gray-400 font-medium overflow-wrap break-after-all">A passagem de
-                mensagem é um método de comunicação entre processos (IPC) usado quando não tem memória compartilhada em
-                sistemas operacionais ou máquinas diferentes.</p>
+            <p class=" w-[50%] text-center text-md text-gray-400 font-medium overflow-wrap break-after-all">Método de comunicação entre processos (IPC) usado quando não há memória compartilhada em
+                sistemas operacionais ou máquinas diferentes</p>
         </section>
 
         <section class="flex flex-row justify-center mt-20 px-5 gap-10" >
@@ -115,8 +113,8 @@
                 <img src="./assets/image2.png" class="w-full h-80 px-10 py-5 rounded-4xl">
                 <p class="px-5 py-5 text-md text-gray-400 font-medium text-start">A ideia de seu funcionamento, é que os
                     processos possam se comunicar entre si, assim evitando que os dois acabem entrando na parte crítica
-                    ao mesmo tempo.Ele também pode ter um coordenador, que é quem escolhe se o processo vai entrar na
-                    parte crítica ou não.Ele funciona com um processo enviando uma mensagem, e o outro processo
+                    ao mesmo tempo. Ele também pode ter um coordenador, que é quem escolhe se o processo vai entrar na
+                    parte crítica ou não. Ele funciona com um processo enviando uma mensagem, e o outro processo
                     recebendo ela.</p>
                 <p class="px-5 py-5 text-md text-gray-400 font-medium text-start">Existem 3 tipos comuns de mensagens
                     para serem utilizadas.</p>
@@ -287,21 +285,21 @@
         <section class="flex flex-row justify-center items-center mt-20 px-5 gap-10">
             <section class="flex flex-col justify-center items-center mt-4 bg-[#2d3748] rounded-xl border-1 border-solid border-gray-600 py-10" data-aos="fade-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1500" data-aos-easing="ease-in-out">
                 <h4 class="pb-8 text-lg text-white font-semibold text-shadow-2xs">Invocação de métodos remotos</h4>
-                <p class="px-5 py-2 text-md text-gray-400 font-light text-center">Um processo pode invocar métodos em objetos que estão em outra máquina, como se fossem locais.</p>
+                <p class="px-5 py-2 text-md text-gray-400 font-semibold text-center">Um processo pode invocar métodos em objetos que estão em outra máquina, como se fossem locais.</p>
             </section>
 
             <svg data-aos="fade-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1500" data-aos-easing="ease-in-out"  class="w-45 h-45 text-sky-500 transform md:-rotate-0 rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 
             <section class="flex flex-col justify-center items-center mt-4 bg-[#2d3748] rounded-xl border-1 border-solid border-gray-600 py-10" data-aos="fade-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1500" data-aos-easing="ease-in-out">
                 <h4 class="pb-8 text-lg text-white font-semibold text-shadow-2xs">Envio de mensagens via rede</h4>
-                <p class="px-5 py-2 text-md text-gray-400 font-light text-center">Essa invocação é feita internamente por meio de mensagens enviadas via rede (serialização, transporte, desserialização).</p>
+                <p class="px-5 py-2 text-md text-gray-400 font-semibold text-center">Essa invocação é feita internamente por meio de mensagens enviadas via rede (serialização, transporte, desserialização).</p>
             </section>
 
             <svg data-aos="fade-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1500" data-aos-easing="ease-in-out"  class="w-45 h-45 text-sky-500 transform md:-rotate-0 rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 
             <section class="flex flex-col justify-center items-center mt-4 bg-[#2d3748] rounded-xl border-1 border-solid border-gray-600 py-7" data-aos="fade-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1500" data-aos-easing="ease-in-out">
                 <h4 class="pb-7 text-lg text-white font-semibold text-shadow-2xs">Uso para exclusão mútua</h4>
-                <p class="px-5 py-2 text-md text-gray-400 font-light text-center">Assim, a RMI é utilizada como infraestrutura de comunicação para implementar a exclusão mútua distribuída.</p>
+                <p class="px-5 py-2 text-md text-gray-400 font-semibold text-center">Assim, a RMI é utilizada como infraestrutura de comunicação para implementar a exclusão mútua distribuída.</p>
             </section>
 
         </section>
@@ -309,8 +307,8 @@
 
     <section class="w-full flex flex-col bg-[#1a202c] font-sans py-15 px-25">
         <section class="flex flex-col gap-3 justify-center items-center mt-4 bg-[#2d3748] rounded-xl border-1 border-solid border-gray-600 py-10" data-aos="fade-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease-in-out">
-            <p class="px-5 py-2 text-md text-gray-400 font-light text-center">Ou seja, cada REQUEST, REPLY e RELEASE pode ser implementado como uma chamada de método remoto, simplificando a comunicação entre processos que participam do algoritmo.</p>
-            <p class="px-5 py-2 text-md text-gray-400 font-light text-center">Simplificando, o RMI é como se fosse um telefone que um computador usa para chamar as funções em outro computador. Ou seja, a máquina vai conseguir usar o objeto/método mesmo que os dois estejam longes um do outro. Assim, trazendo benefícios,  invocando os métodos e objetos como se fossem locais.</p>
+            <p class="px-5 py-2 text-md text-gray-400 font-semibold text-center">Ou seja, cada REQUEST, REPLY e RELEASE pode ser implementado como uma chamada de método remoto, simplificando a comunicação entre processos que participam do algoritmo.</p>
+            <p class="px-5 py-2 text-md text-gray-400 font-semibold text-center">Simplificando, o RMI é como se fosse um telefone que um computador usa para chamar as funções em outro computador. Ou seja, a máquina vai conseguir usar o objeto/método mesmo que os dois estejam longes um do outro. Assim, trazendo benefícios,  invocando os métodos e objetos como se fossem locais.</p>
         </section>
     </section>
 
@@ -323,10 +321,10 @@
         </section>
 
         <section class="flex flex-col gap-5 justify-center items-center mt-4 bg-[#2d3748] rounded-xl border-1 border-solid border-gray-600 py-10" data-aos="fade-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1500" data-aos-easing="ease-in-out">
-            <h5 class="px-5 text-lg text-sky-600 font-semibold text-shadow-2xs">Imagine dois computadores A e B.</h5>
-            <p class="px-5 py-2 text-md text-gray-400 font-light text-center">Quando A quer entrar na sessão crítica, ao invés dele mandar manualmente a requisição para B, ele apenas chama um método de B “b.pedirPermissão”. A saída do método vai dizer se A pode entrar na sessão, devolvendo o reply, ou se não, não retornando nada.</p>
-            <p class="px-5 py-2 text-md text-gray-400 font-light text-center">Desse modo, <strong>o RMI é como se fosse um “atalho”</strong>, para <strong>evitar detalhes de rede como abrir socket, formatar mensagem, enviar, esperar resposta, fazer uso de json, XML, binário, tratar erros de rede. ele faz sem depender da interpretação do computador que está sendo requisitado.</strong> Você apenas chama os métodos e o java faz o resto.</p>
-            <p class="px-5 py-2 text-md text-gray-400 font-light text-center">A grande diferença desse para outros métodos, é que esse abstrai toda a rede, fazendo com que o programador em si foque apenas na lógica da aplicação, e não ter quer focar também nas requisições citadas anteriormente.</p>
+            <h5 class="px-5 text-xl text-sky-600 font-semibold text-shadow-2xs">Imagine dois computadores A e B.</h5>
+            <p class="px-5 py-2 text-md text-gray-400 font-semilight text-center">Quando A quer entrar na sessão crítica, ao invés dele mandar manualmente a requisição para B, ele apenas chama um método de B “b.pedirPermissão”. A saída do método vai dizer se A pode entrar na sessão, devolvendo o reply, ou se não, não retornando nada.</p>
+            <p class="px-5 py-2 text-md text-gray-400 font-semilight text-center">Desse modo, <strong>o RMI é como se fosse um “atalho”</strong>, para <strong>evitar detalhes de rede como abrir socket, formatar mensagem, enviar, esperar resposta, fazer uso de json, XML, binário, tratar erros de rede. ele faz sem depender da interpretação do computador que está sendo requisitado.</strong> Você apenas chama os métodos e o java faz o resto.</p>
+            <p class="px-5 py-2 text-md text-gray-400 font-semilight text-center">A grande diferença desse para outros métodos, é que esse abstrai toda a rede, fazendo com que o programador em si foque apenas na lógica da aplicação, e não ter quer focar também nas requisições citadas anteriormente.</p>
         </section>
 
     </section>

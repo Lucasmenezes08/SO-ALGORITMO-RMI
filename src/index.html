@@ -267,6 +267,36 @@
         </section>
     </section>
 
+
+    <section class="w-full flex flex-col bg-[#1a202c] font-sans py-15">
+         <section class="flex flex-col justify-center items-center">
+            <h3 class="py-3 text-3xl  text-white font-semibold text-shadow-2xs">RMI (Remote Method Invocation)</h3>
+            <p class=" w-[50%] text-center text-md text-gray-400 font-medium">Quando usamos RMI (Remote Method Invocation), estamos lidando com uma forma de passagem de mensagens remotas em Java. Nesse caso:</p>
+        </section>
+
+        <section class="flex flex-row justify-center items-center mt-20 px-5 gap-10">
+            <section class="flex flex-col justify-center items-center mt-4 bg-[#2d3748] rounded-xl border-1 border-solid border-gray-600 py-10">
+                <h4 class="pb-8 text-lg text-white font-semibold text-shadow-2xs">Invocação de métodos remotos</h4>
+                <p class="px-5 py-2 text-md text-gray-400 font-light text-center">Um processo pode invocar métodos em objetos que estão em outra máquina, como se fossem locais.</p>
+            </section>
+
+            <svg class="w-45 h-45 text-sky-500 transform md:-rotate-0 rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+
+            <section class="flex flex-col justify-center items-center mt-4 bg-[#2d3748] rounded-xl border-1 border-solid border-gray-600 py-10">
+                <h4 class="pb-8 text-lg text-white font-semibold text-shadow-2xs">Envio de mensagens via rede</h4>
+                <p class="px-5 py-2 text-md text-gray-400 font-light text-center">Essa invocação é feita internamente por meio de mensagens enviadas via rede (serialização, transporte, desserialização).</p>
+            </section>
+
+            <svg class="w-45 h-45 text-sky-500 transform md:-rotate-0 rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+            
+            <section class="flex flex-col justify-center items-center mt-4 bg-[#2d3748] rounded-xl border-1 border-solid border-gray-600 py-7">
+                <h4 class="pb-7 text-lg text-white font-semibold text-shadow-2xs">Uso para exclusão mútua</h4>
+                <p class="px-5 py-2 text-md text-gray-400 font-light text-center">Assim, a RMI é utilizada como infraestrutura de comunicação para implementar a exclusão mútua distribuída.</p>
+            </section>
+
+        </section>
+    </section>
+
     <section class="w-full flex justify-center items-center bg-[#1a202c] font-sans py-30 px-20">
         <div id="animation-container"
             class="w-full h-screen rounded-xl overflow-hidden border-2 border-solid border-gray-600 shadow-lg">
@@ -277,3 +307,4 @@
 </body>
 
 </html>
+
